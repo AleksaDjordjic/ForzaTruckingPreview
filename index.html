@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <!-- Head -->
+  <head>
+    <!--<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">-->
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/form.css">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="js/form.js"></script>
+
+    <meta charset="utf-8">
+    <title>FTC | Application Form</title>
+  </head>
+
+  <!-- Content -->
+  <body style="min-width: 320px" background="data/images/background.jpg">
+    <div class="content-container">
+      <div class="container">
+        <div class="content z-depth-5">
+          <p class="company-title">Forza Trucking Company</p>
+          <p class="title">Application Form</p>
+
+          <!-- Form -->
+          <form id="form" class="container form z-depth-3" action="index.html" method="post" submit="">
+
+            <!-- Welcome -->
+            <div class="tab">
+              <div class="row"><p class="tab-title col s12">Welcome :</p></div>
+              <p class="tab-text" style="font-size: 24px; text-align: center;">Hello there!</p>
+              <div class="row"><p class="tab-text col s12">
+                Thank you for showing your interest in joining Forza Trucking Company.
+                Please fill up this form.
+                Someone from our staff team will contact you within 10 hours.</p></div>
+            </div>
+
+            <!-- Information -->
+            <div class="tab">
+              <div class="row"><p class="tab-title col s12">Basic Information :</p></div>
+
+              <div class="row">
+                <!-- Name -->
+                <div class="col s6 input-holder">
+                  <div class="input-field">
+                    <input id="name" type="text" autocomplete="cc-cc-name" class="validate">
+                    <label for="name">Name</label>
+                  </div>
+                </div>
+
+                <!-- Age -->
+                <div class="col s6 input-holder">
+                  <div class="input-field">
+                    <input id="age" type="number" class="validate">
+                    <label for="age">Age</label>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Email -->
+              <div class="row">
+                <div class="input-holder col s12">
+                  <div class="input-field">
+                    <input id="email" type="email" class="validate">
+                    <label for="email">Email</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+
+                <!-- Discord -->
+                <div class="input-field inline col s6">
+                  <input id="discord-link-username" type="text" class="validate">
+                  <label for="discord-link-username">Discord Link/Username</label>
+                </div>
+
+                <!-- TruckersMP ID Link -->
+                <div class="input-field inline col s6">
+                  <input id="truckers-mp-link" type="text" class="validate">
+                  <label for="truckers-mp-link">TruckersMP Link</label>
+                </div>
+
+              </div>
+
+              <!-- Country -->
+              <div class="row">
+                <div class="input-field inline col s12">
+                  <input id="country" type="text" class="validate">
+                  <label for="country">Country</label>
+                </div>
+              </div>
+            </div>
+
+            <!-- Qucik Interview -->
+            <div class="tab">
+              <div class="row"><p class="tab-title col s12">Qucik Interview :</p></div>
+
+              <div class="row">
+                <div class="col s12 input-holder">
+                  <div class="input-field">
+                    <input id="someting-about-yourself" spellcheck="true" type="text" class="validate">
+                    <label for="someting-about-yourself">Something about yourself...</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col s12 input-holder">
+                  <div class="input-field">
+                    <input id="why-join" spellcheck="true" type="text" class="validate">
+                    <label for="why-join">Why would you like to join?</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Finished -->
+            <div class="tab">
+              <div class="row"><p class="tab-title col s12">Done!</p></div>
+              <div class="row"><p class="tab-text col s12">
+                Thanks for filling up the application.
+                We'll get back to you asap.
+                Make sure you join our Discord!</p></div>
+              <div class="row"><a class="waves-effect waves-light btn col s12" href="https://discord.gg/evKrNZj">Discord</a></div>
+            </div>
+
+            <!-- Buttons -->
+            <div class="row">
+              <button class="btn waves-effect waves-light pevious-button col s5 m3" type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+              <button class="btn waves-effect waves-light next-button col s5 m3" type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+            </div>
+
+            <!-- Circles which indicates the steps of the form: -->
+            <div style="text-align:center;margin-top:40px;">
+              <span class="step"></span>
+              <span class="step"></span>
+              <span class="step"></span>
+              <span class="step"></span>
+            </div>
+
+          </form>
+          <br/>
+        </div>
+
+      </div>
+    </div>
+
+    <script src="js/materialize.min.js"></script>
+    <script src="js/initialize-materialize.js"></script>
+  </body>
+</html>

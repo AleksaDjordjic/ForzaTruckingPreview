@@ -1,0 +1,27 @@
+.content-container{
+  padding-top: 100px;
+}
+.content{
+  background: #303030;
+  border-radius: 5px;
+}
+.container{
+  max-width: 1280px;
+}
+.company-title{
+  font-family: Roboto;
+  font-size: 26px;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 25px;
+  margin: 0px;
+  color: white;
+}
+.title{
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 300;
+  text-align: center;
+  margin: 0px;
+  color: lightgrey;
+}
