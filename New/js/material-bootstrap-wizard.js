@@ -48,7 +48,7 @@ $(document).ready(function(){
         truckersmplink: {
           required: true,
         },
-        discordlink: {
+        discordid: {
           required: true,
         },
         tellusaboutyourself: {
@@ -61,7 +61,6 @@ $(document).ready(function(){
         },
         howfind: {
           required: true,
-          minlength: 25,
         }
         },
 

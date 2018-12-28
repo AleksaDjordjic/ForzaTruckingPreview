@@ -31,7 +31,7 @@
 			<div class="row">
 				<div class="col-sm-8 col-sm-offset-2">
 					<!--      Wizard container        -->
-					<div class="wizard-container">
+					<div class="wizard-container" style="padding-bottom: 100px;">
 						<div class="card wizard-card" data-color="blue" id="wizardProfile">
 							<form action="" method="">
 								<!--        You can switch " data-color="purple" "  with one of the next bright colors: "green", "orange", "red", "blue"       -->
@@ -112,8 +112,8 @@
 														<i class="material-icons">record_voice_over</i>
 													</span>
 													<div class="form-group label-floating">
-														<label class="control-label">Discord Link <small>(required)</small></label>
-														<input name="discordlink" type="text" class="form-control">
+														<label class="control-label">Discord ID <small>(required)</small></label>
+														<input name="discordid" type="text" class="form-control">
 													</div>
 												</div>
 												<div class="input-group">
@@ -157,7 +157,7 @@
 														<i class="material-icons">thumb_up</i>
 													</span>
 													<div class="form-group label-floating">
-														<label class="control-label">How did you find us ? <small>(required, at least 25 char.)</small></label>
+														<label class="control-label">How did you find us ? <small>(required)</small></label>
 														<textarea name="howfind" type="text" class="form-control" rows="1"></textarea>
 													</div>
 												</div>
@@ -165,7 +165,7 @@
 												<div class="checkbox col-sm-offset-1">
 													<label>
 														<input type="checkbox" name="optionsCheckboxes">
-														Are you currently in another VTC ?
+														<p style="display: inline; color: black">Are you currently in another VTC ?</p>
 													</label>
 												</div>
 
@@ -175,8 +175,8 @@
 									<div class="tab-pane" id="done">
 										<div class="row">
 											<h4 class="info-text">You're done</h4>
-											<p class="col-sm-offset-1 col-sm-10">Thanks, you will receive an email within 10 working hours.</p>
-											<p class="col-sm-offset-1 col-sm-10">Good luck!</p>
+											<p class="col-sm-offset-1 col-sm-10" style="text-align: center;">Thanks, you will receive an email within 10 working hours.<br/>
+											Good Luck !</p>
 										</div>
 									</div>
 								</div>
@@ -188,7 +188,7 @@
 										</div>
 
 										<div class="pull-left">
-											<input type='button' class='btn btn-previous btn-fill btn-default btn-wd btn-info' name='previous' value='Previous' />
+											<input type='button' class='btn btn-previous btn-fill btn-default btn-wd' name='previous' value='Previous' />
 										</div>
 										<div class="clearfix"></div>
 									</div>
